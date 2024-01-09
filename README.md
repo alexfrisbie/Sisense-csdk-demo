@@ -1,6 +1,8 @@
 # Sisense Compose SDK Demo
 Simple React web app for demoing and exploring Compose SDK capabilities. Flask back end enables communication between your front end, sisense environment, and db.
 
+![Gif showing demo app in action](example.gif)
+
 ## Why should I use this
 - Ease of use
   - Simply typing 'docker-compose up' creates a sandbox website running where you can explore or demo compose sdk
