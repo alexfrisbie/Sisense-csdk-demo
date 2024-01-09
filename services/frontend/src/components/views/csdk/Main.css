@@ -1,0 +1,13 @@
+.csdk-filters {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  margin-right: 3.5rem;
+  position: absolute;
+  right: 0;
+}
+
+.csdk-filter {
+  margin: 1rem;
+  text-align: center;
+}

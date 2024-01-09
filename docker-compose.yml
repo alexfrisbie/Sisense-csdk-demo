@@ -1,0 +1,57 @@
+version: "3.8"
+services:
+
+  # Uncomment to create a backend container for a postgres DB
+  # db:
+  #   container_name: postgres
+  #   build: 
+  #     context: ./services/db
+  #     dockerfile: Dockerfile
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - ./data/db:/data/db
+  #   ports:
+  #     - "5432:5432"
+  #   restart: unless-stopped
+
+  # # Uncomment to create a backend container for flask APIs
+  # backend:
+  #   container_name: flask
+  #   build: 
+  #     context: ./services/backend
+  #     dockerfile: Dockerfile
+  #   env_file:
+  #     - .env
+  #   volumes: 
+  #     - ./services/backend/src:/home/ubuntu/webapp/src
+  #     # Following two volumes enable python to create datamodel.ts
+  #     - ./services/frontend/src/types:/home/ubuntu/frontend/src/types
+  #     - node_modules:/home/ubuntu/webapp/node_modules
+  #   ports:
+  #     # - "5000:5000" Issues with MacOs using this port
+  #     - "5001:5001"
+  # # depends_on:
+  # #     - db
+
+  frontend:
+    container_name: react
+    build: 
+      context: ./services/frontend
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      # - ./services/frontend/:/home/ubuntu/frontend/
+      - ./services/frontend/public:/home/ubuntu/frontend/public
+      - ./services/frontend/src:/home/ubuntu/frontend/src
+      - node_modules:/home/ubuntu/frontend/node_modules
+    ports:
+      - '3000:3000'
+    # depends_on:
+    #   - backend
+    command: ["npm", "start"]
+    # command: tail -f /dev/null
+
+volumes:
+  node_modules:

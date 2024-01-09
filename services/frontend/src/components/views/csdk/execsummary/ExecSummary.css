@@ -1,0 +1,100 @@
+
+.executiveContainerHeaders {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.currentPeriod, .priorPeriod {
+  color: whitesmoke;
+  width: 6rem;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #01061F;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.executiveContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.lineContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0.75rem;
+  height: 4rem;
+  flex: 1, 1, 10%;
+}
+
+.lineText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(270deg, #4AAFEC 90%, #ffffff 0%);
+  border-radius: 1rem;
+  width: 70%;
+}
+
+.lineTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+
+  color: whitesmoke;
+  background-color: #01061F;
+  border-radius: 0.25rem;
+  width: 8.5rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.lineSummary {
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 15rem;
+  color: #000000;
+}
+
+.lineIcon {
+  color: #000000;
+  margin: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.lineMetricContainer {
+  display: table;
+}
+
+.metricContainerVals {
+  display: table-row;
+}
+
+.valsCurrentPeriod, .valsPreviousPeriod, .growthPctChangeText, .growthPctChange {
+  display: table-cell;
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  width: 7rem;
+  text-align: left;
+}
+
+.growthPctChangeText, .growthPctChange {
+  font-size: 0.8rem;
+}
+
+.metricContainerGrowth {
+  display: table-row;
+}

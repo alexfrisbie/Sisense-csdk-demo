@@ -1,0 +1,631 @@
+{
+    "_id": "64da909c318245aad8cedf2e",
+    "oid": "fdb9b49d-51d6-4a78-8495-517d4c43fe57",
+    "title": "Sample ECommerce",
+    "type": "extract",
+    "relationType": "regular",
+    "relationsTables": [],
+    "enableDimensionalModeling": null,
+    "server": "LocalHost",
+    "buildDestination": {
+        "destination": "elasticube",
+        "database": null,
+        "schema": null
+    },
+    "modelStatistics": {
+        "enableModelStatistics": false,
+        "maxTablesPerCollection": 0,
+        "recollectStatsInterval": 0
+    },
+    "fiscal": "system",
+    "relations": [
+        {
+            "oid": "b1b44d89-e76a-435d-9976-d5437c400d3b",
+            "type": null,
+            "columns": [
+                {
+                    "dataset": "d8f2d0a2-a739-474e-bd07-1101aff1d621",
+                    "table": "4457cebb-d58c-4729-8ed7-015cad856d13",
+                    "column": "e5b0a553-83ea-4eb6-b45b-45fa86da4237"
+                },
+                {
+                    "dataset": "9f339825-1c28-49bf-a745-d9f7ee6b2163",
+                    "table": "1c92b66f-e29c-4fcb-9925-0bc372d816be",
+                    "column": "640979d5-d537-4981-aaa3-c053e1f48f7b"
+                }
+            ]
+        },
+        {
+            "oid": "87a7411f-0812-4d95-9010-81980a6d5dcb",
+            "type": null,
+            "columns": [
+                {
+                    "dataset": "51dcd68d-e4a9-4c09-8035-7ef99ff65388",
+                    "table": "fcab0777-a20b-4b77-8a60-ab4f6a49a055",
+                    "column": "f5eac6fc-a66d-4851-9aa6-f4fe4d1956fe"
+                },
+                {
+                    "dataset": "d8f2d0a2-a739-474e-bd07-1101aff1d621",
+                    "table": "4457cebb-d58c-4729-8ed7-015cad856d13",
+                    "column": "aeecf88c-f301-448c-af2a-dae2fc919cda"
+                }
+            ]
+        },
+        {
+            "oid": "11d9d8e6-11c7-4519-9379-31609d3be452",
+            "type": null,
+            "columns": [
+                {
+                    "dataset": "883b0832-48f7-464c-a1d9-410b72efe073",
+                    "table": "a47caf11-286e-4f7e-a00e-ab1a44567f64",
+                    "column": "464029ae-1953-42c5-bf41-cf387ca5edac"
+                },
+                {
+                    "dataset": "d8f2d0a2-a739-474e-bd07-1101aff1d621",
+                    "table": "4457cebb-d58c-4729-8ed7-015cad856d13",
+                    "column": "902e96ff-3a25-4ba7-bafa-a1ca5f136618"
+                }
+            ]
+        }
+    ],
+    "datasets": [
+        {
+            "oid": "51dcd68d-e4a9-4c09-8035-7ef99ff65388",
+            "fullname": "CSV:d45d2fe9-96c4-4ea2-919c-9333e3212c2d",
+            "database": "null",
+            "type": "extract",
+            "name": "d45d2fe9-96c4-4ea2-919c-9333e3212c2d",
+            "schemaName": "null",
+            "connection": {
+                "oid": "0e40c331-e743-4f4e-8c9a-75c1dc76118b",
+                "name": "Sample ECommerce 3",
+                "description": "",
+                "id": null,
+                "provider": "CSV",
+                "parameters": "eyJlbmNyeXB0ZWREYXRhIjp7ImNpcGhlcnRleHQiOiI0Z0RWSW5GZldTUENQeHJWakgrcFJPOVNpamxscE5NcnRXYW45UzZtcm1qWjdlYkpGRjk4SFRMVjJMbUdSSlpZRGNBdDdKa2I4M2F5SmY1VC9aNW94eWVCUGR5V2dGZUFnQlpsbllTOC8vai9lcytydVp4OVRBS2NObWpZazJtL0VQaUI5UGI5U2dWbXZGUnNnUDRxZ1JseVQ0ZExuVlFQaE54YWhIaXh5cmJNNzhHdmVaY2xrZE8zRTlKcjNnZnpNbk5SN0VTb2ozSFJoUjRnS1dleVNGU2pSbHB4cWI4cm05VkM0c1VDZWZ3TEJmZUVUWVBCREFRRmxBSW5JQ1crbU0rSThxVlNRaExZWUdJSW0zd1QzTm9WWHhPR1ZlQ3lON2ZzRGlsZ2I5ZFR6ck5XdzIvT1J0b1ZycDJ5YXVZRVhCR245N1V6aUlsNXpYNHZYT0R3cUUrZ0V5azBtMTBCYUp6ZTJDdDBSYmwwQWc2UU41ckV4ZkdsbHl2a0VmM0tPQXJmSVlCY3FxM2p1RHZsdG9HRENtVmZYdjNqKytMMXl0SEtidjl2Zjh4VXN5YmVnNGF5UzlWTjJvem95d1pnWjkrMWdWTnZCempXQ3JpanFlckdvK3MyTjhIRXk2dzNqWlg0M3ZKNS9TVXJVQVRiNUM3bDIraldCZnJGalNHbUpMUjdTdVh3RVdPYlp2dkNTekhXOGc9PSIsIm5vbmNlIjoiczJZMFJJZHpkMWZMRW5wU2toSkFXZz09In0sImVuY3J5cHRpb25NZXRhZGF0YSI6eyJwcm92aWRlciI6IkxPQ0FMIiwia2V5SWQiOiIxMjMiLCJlbmNyeXB0aW9uVGltZSI6IjIwMjQtMDEtMDlUMTk6MjQ6MzQuOTA1NzEwNzMzWiJ9fQ==",
+                "schema": "null",
+                "fileName": null,
+                "globalTableConfigOptions": null
+            },
+            "modelingTransformations": [],
+            "schema": {
+                "tables": [
+                    {
+                        "oid": "fcab0777-a20b-4b77-8a60-ab4f6a49a055",
+                        "id": "Country.csv",
+                        "name": "Country",
+                        "role": null,
+                        "isRoleBySystem": null,
+                        "type": "base",
+                        "schemaName": null,
+                        "columns": [
+                            {
+                                "oid": "05110323-5c01-477b-bfbb-f6b7399b8b60",
+                                "id": "Country",
+                                "name": "Country",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 18,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "f5eac6fc-a66d-4851-9aa6-f4fe4d1956fe",
+                                "id": "Country ID",
+                                "name": "Country ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "2698590c-136c-4e3c-8aa7-5c961997a80a",
+                        "configOptions": {
+                            "Table": "Country.csv"
+                        },
+                        "isMaterialized": false
+                    }
+                ]
+            },
+            "liveQuerySettings": null
+        },
+        {
+            "oid": "883b0832-48f7-464c-a1d9-410b72efe073",
+            "fullname": "CSV:f4e4bf8d-11f4-43a6-8c59-530dcc424e1e",
+            "database": "null",
+            "type": "extract",
+            "name": "f4e4bf8d-11f4-43a6-8c59-530dcc424e1e",
+            "schemaName": "null",
+            "connection": {
+                "oid": "5713311d-ef84-4418-97be-75965bc55bd5",
+                "name": "Sample ECommerce 4",
+                "description": "",
+                "id": null,
+                "provider": "CSV",
+                "parameters": "eyJlbmNyeXB0ZWREYXRhIjp7ImNpcGhlcnRleHQiOiJaTitscjB1MTZySzVWUHdJN1J3WUEzSDVPMkJWQWdLdXJCSEpTdTNhaytEYzVWMHJoUkpNc3MrVWdWTzFyRnM5TU95a29LQVhyRWJ3QzhhNjBhd3pOYnhBYjkxemFXMVpkNndRMVhjWmE3SDBpK25jY1dyWkFQaUlpSGx0UGMzQzZ1TGM5OXpDdllwNWI5MzRnV3NGRDNwTjhaNno5anpERXY4dGFxY3ZKV2tWUmJzR1BMcURLaUFoTFZERDhvT1VHc01meVRWNU5uRVVyckxkV090TVNiNzVvOHExRnFTcFlQWnZMVFdJU3d3S3hMd0VBbUxjeUJobEtabEdaSjdEUG84L1Jqak5GZzJiUGl1eHdEVVAvQm1qd1pBeHlBUDNpWSt5ZnJNSjRDOFlWODFSOXlqR2o5cUJSVzlTWlRRcEdRbWJjV1RNVERoQUlOUUFqdm85U05RWTVXeGFabTI4Sm5WWDFKNWwwRXZqN3ZnY05MVURuNjF0Y3pQT3g0cGlaYndvNkUvTHlnWlF2NTU0TzNCVEFhTEtvNUE2YTJUMXFPVEdOUWZYUWdKMXpVRFNzT2k3azh1d3dMYzN2dXpFT3FUMTVrcCtyTWhvVEJGSWVsTm1zMkNmcTZDblNuQnMxdXZWNGFzUUVHa3p0NVhvb0s0NEloNGVheGFzR0xra2tQVzJSbWErNEVuWHVMSXI4S0lqMVE9PSIsIm5vbmNlIjoiUEFONE82ZmszTFRlcmY5RGp5ZXRDUT09In0sImVuY3J5cHRpb25NZXRhZGF0YSI6eyJwcm92aWRlciI6IkxPQ0FMIiwia2V5SWQiOiIxMjMiLCJlbmNyeXB0aW9uVGltZSI6IjIwMjQtMDEtMDlUMTk6MjQ6MzQuOTA1NzEwNjg2WiJ9fQ==",
+                "schema": "null",
+                "fileName": null,
+                "globalTableConfigOptions": null
+            },
+            "modelingTransformations": [],
+            "schema": {
+                "tables": [
+                    {
+                        "oid": "a47caf11-286e-4f7e-a00e-ab1a44567f64",
+                        "id": "Category.csv",
+                        "name": "Category",
+                        "role": null,
+                        "isRoleBySystem": null,
+                        "type": "base",
+                        "schemaName": null,
+                        "columns": [
+                            {
+                                "oid": "bbed221d-e5b1-432a-bd94-707455628f9b",
+                                "id": "Category",
+                                "name": "Category",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 18,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "464029ae-1953-42c5-bf41-cf387ca5edac",
+                                "id": "Category ID",
+                                "name": "Category ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "a0321b33-428e-4148-84a4-78511c9a3543",
+                        "configOptions": {
+                            "Table": "Category.csv"
+                        },
+                        "isMaterialized": false
+                    }
+                ]
+            },
+            "liveQuerySettings": null
+        },
+        {
+            "oid": "9f339825-1c28-49bf-a745-d9f7ee6b2163",
+            "fullname": "CSV:8556c4d5-39ee-4a66-b26b-f770172f7cd8",
+            "database": "null",
+            "type": "extract",
+            "name": "8556c4d5-39ee-4a66-b26b-f770172f7cd8",
+            "schemaName": "null",
+            "connection": {
+                "oid": "3276e11a-4640-435b-bf83-081ca48aa1cb",
+                "name": "Sample ECommerce 2",
+                "description": "",
+                "id": null,
+                "provider": "CSV",
+                "parameters": "eyJlbmNyeXB0ZWREYXRhIjp7ImNpcGhlcnRleHQiOiJVQ3NjUmllZ0ZxaldXWmtEWWNpWWI4UGhMMkNRaEdUVldQMWF1cGtYMHY5NUVNT2hXNmh2MGIrTkh1QWs0eWNFTk9TNkZNVmY4OUttN0NtZ0ZUNmNjdmdUWVlUM3JNWG5xbkhIM1RlbnU1Ly9pQU51MlNtZGdpS1QxYy9JbFZDejFGWVlCQ2RoSVlPUDZhOWNUc3RJT1dlNzhpYk5SaStZU1hOeUlkZGx5YTE2ODZUSy96Njd5Nmp2UW9PV0VHbFp3cndRbHlDZmQ0WGlJbmU4TVkzZTJ5YnhDbWU5OWF3YXpPMWpqTXRrM2xhYVoySjl3QVdTcC84djMvSTR2TFFHV3ZaTUk0NTVQc3VFaHlLZFZLSFlDalBPdmpGbC8yWUlBaTlqUHNHRHlVUi8waVhTNWt3T0JzaUNDWGJ3eXJ6V2pZcE9zVUZnemhuemdyR1NVTkw4ODFDa0gvTnJ3UEViUUtnRWJKMkVaQzRkVTRSTXVyYzlKTzkwUnRLaHpPaFdFNVc2TVNNYnhYUGlEenpNbnJ4R2NyQTYvNWRheklVbXgyNXZlY1NuM0xSbjVjeEhiYnpFdzBpbkFTM2RVTFFpUDFFa1NMTkg0Rlh3dUx1M1lCV2VKRHhzb0llMm4wM3BMMjhJc3RGS0JGejVEZkc0WXhabWR1UVduZnZYY0l6TEpFVGM2WGkwM21QL1lTVUhFVUIrOXc9PSIsIm5vbmNlIjoibGZmdVhScW9NaFdxTkN4b0xKcHhoUT09In0sImVuY3J5cHRpb25NZXRhZGF0YSI6eyJwcm92aWRlciI6IkxPQ0FMIiwia2V5SWQiOiIxMjMiLCJlbmNyeXB0aW9uVGltZSI6IjIwMjQtMDEtMDlUMTk6MjQ6MzQuOTA1NzEyNjk1WiJ9fQ==",
+                "schema": "null",
+                "fileName": null,
+                "globalTableConfigOptions": null
+            },
+            "modelingTransformations": [],
+            "schema": {
+                "tables": [
+                    {
+                        "oid": "1c92b66f-e29c-4fcb-9925-0bc372d816be",
+                        "id": "Brand.csv",
+                        "name": "Brand",
+                        "role": null,
+                        "isRoleBySystem": null,
+                        "type": "base",
+                        "schemaName": null,
+                        "columns": [
+                            {
+                                "oid": "132b02ce-ea8d-420a-aa1a-a8396015d96d",
+                                "id": "Brand",
+                                "name": "Brand",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 18,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "640979d5-d537-4981-aaa3-c053e1f48f7b",
+                                "id": "Brand ID",
+                                "name": "Brand ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "11fa57e6-1a47-4ffa-9352-36d91f7a8f7e",
+                        "configOptions": {
+                            "Table": "Brand.csv"
+                        },
+                        "isMaterialized": false
+                    }
+                ]
+            },
+            "liveQuerySettings": null
+        },
+        {
+            "oid": "d8f2d0a2-a739-474e-bd07-1101aff1d621",
+            "fullname": "CSV:7cf17a29-7dc1-4caa-8ad6-0e541af30dc4",
+            "database": "null",
+            "type": "extract",
+            "name": "7cf17a29-7dc1-4caa-8ad6-0e541af30dc4",
+            "schemaName": "null",
+            "connection": {
+                "oid": "e7567012-7bf5-465e-b9ad-92fb02601af5",
+                "name": "Sample ECommerce 1",
+                "description": "",
+                "id": null,
+                "provider": "CSV",
+                "parameters": "eyJlbmNyeXB0ZWREYXRhIjp7ImNpcGhlcnRleHQiOiI0d0ZHRVZic0padjFKbVI5NjBEcnY0ZVVwUnpvMnl3cWdDMGtHRnhGa1pLQXN0Y0NKcDVveDVFUXVpVU45Qm5xY09BZ2pXWk0raG00KzVlZmpwQlFZcGNEbGlxc2puanR0Z2FOQ29Oam1leXdvWnlldDh0VmhENS9lR21FYi9helBpek9CVGNsTnByVTZhQmNDRkhpZ0ZPMU90RVRIeCswTjhVazZXd2FKMTE1aUltZnB1WGl2M3prQU01VDFNbVhQa3l1T1gxdnN5elhyai8yaEI0cGl0TWpOMFNOUFhxM01hTnczdGUyRWNFdVBBbnRTa3I2YkRyM3ZEOVVsbERrT0VkWXQySURmdjJ5YjhrOXdCU3dZdUhzVTdEM0x6c1AzSWFEcTR2a3VtaDNzZEh0SUdDWU5CVHA0UkFtQnEwaC92NjcyTmNyTXd2akRtSFhaT3ZYa2orcVN5MkpSM0FUR0EyRndGY1NwMGVGTkVuUldkdFJ1Z1RQR0dnaWgwQUxGb3RQNGhrTDNrY3VXbHJQYkIxMDdQeC9qTEdJME8wV1RzVGQyZ3RwZVVkaXA4T1FhZUk4ZkRrZEF6OUFUa2hXUkRoamE1TThUSVlsOWpMTmVYVXVwaGZnS212dWE4c2hvUHV4aHJXZW53TkRoUHkxV0dIRW5XQ2ROV0FRYW44UGd3bENzZ203SHVHODJzNzYvcjVqUVE9PSIsIm5vbmNlIjoiNncyNk1aN0NkUVphYXlCVTFyQmV5QT09In0sImVuY3J5cHRpb25NZXRhZGF0YSI6eyJwcm92aWRlciI6IkxPQ0FMIiwia2V5SWQiOiIxMjMiLCJlbmNyeXB0aW9uVGltZSI6IjIwMjQtMDEtMDlUMTk6MjQ6MzQuOTA1NzIxNTY5WiJ9fQ==",
+                "schema": "null",
+                "fileName": null,
+                "globalTableConfigOptions": null
+            },
+            "modelingTransformations": [],
+            "schema": {
+                "tables": [
+                    {
+                        "oid": "4457cebb-d58c-4729-8ed7-015cad856d13",
+                        "id": "Commerce.csv",
+                        "name": "Commerce",
+                        "role": null,
+                        "isRoleBySystem": null,
+                        "type": "base",
+                        "schemaName": null,
+                        "columns": [
+                            {
+                                "oid": "ba49abd9-97ff-474f-bdb5-f5b546d34404",
+                                "id": "Age Range",
+                                "name": "Age Range",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 18,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "13c6a03b-957b-4768-9e6a-f340938db1f9",
+                                "id": "Cost",
+                                "name": "Cost",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 5,
+                                "size": 50,
+                                "precision": 16,
+                                "scale": 16,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "e5b0a553-83ea-4eb6-b45b-45fa86da4237",
+                                "id": "Brand ID",
+                                "name": "Brand ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "902e96ff-3a25-4ba7-bafa-a1ca5f136618",
+                                "id": "Category ID",
+                                "name": "Category ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "463f22eb-0005-4601-b609-d4027765aa4c",
+                                "id": "Condition",
+                                "name": "Condition",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 18,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "aeecf88c-f301-448c-af2a-dae2fc919cda",
+                                "id": "Country ID",
+                                "name": "Country ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "28b22de7-807e-478e-9de2-baf46b7660e9",
+                                "id": "Date",
+                                "name": "Date",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 4,
+                                "size": 8,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "bf6c85ca-5382-44b5-a1b5-37231a640be3",
+                                "id": "Gender",
+                                "name": "Gender",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 18,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "68bfd409-904b-4287-ad37-516a50bb65e3",
+                                "id": "Quantity",
+                                "name": "Quantity",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "72b5b85c-f224-4979-af9a-08701d334e22",
+                                "id": "Revenue",
+                                "name": "Revenue",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 5,
+                                "size": 50,
+                                "precision": 16,
+                                "scale": 16,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "fcec0359-d9a8-4c0b-bff2-722b8e3f3da6",
+                                "id": "Visit ID",
+                                "name": "Visit ID",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 8,
+                                "size": 50,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "isUpsertBy": false,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [
+                            {
+                                "arguments": {
+                                    "id": "DateCurrent",
+                                    "name": "DateCurrent",
+                                    "type": 19,
+                                    "size": 0,
+                                    "scale": 0,
+                                    "precision": 0,
+                                    "lastUpdated": "2023-11-22T20:33:27.297Z",
+                                    "oid": "50d280fc-cf95-4e24-b956-a2d42c5676bb",
+                                    "hidden": false,
+                                    "indexed": true,
+                                    "isUpsertBy": false,
+                                    "expression": {
+                                        "lastUpdated": "2023-11-22T20:30:31.501Z",
+                                        "oid": "34aee7c7-561c-4888-91f1-b0a29996077a",
+                                        "expression": "Lookup([DateCurrent], [DateCurrent], [Date], [Date])\n",
+                                        "isDatabaseDialect": false
+                                    }
+                                },
+                                "type": "add-column"
+                            }
+                        ],
+                        "hidden": false,
+                        "vTag": "5cfccafc-1c37-4902-86fd-12193734a25a",
+                        "configOptions": {
+                            "Table": "Commerce.csv"
+                        },
+                        "isMaterialized": false
+                    }
+                ]
+            },
+            "liveQuerySettings": null
+        },
+        {
+            "oid": "d9c68573-ad44-496a-bfb4-b386066c415d",
+            "fullname": "aca05d75-5bb3-40bb-900b-a9c06b674281",
+            "database": "",
+            "type": "custom",
+            "name": "aca05d75-5bb3-40bb-900b-a9c06b674281",
+            "schemaName": "",
+            "connection": {
+                "oid": "7913966e-1542-4b0f-bd66-e0c18bde4a83",
+                "name": null,
+                "description": null,
+                "id": null,
+                "provider": "",
+                "parameters": {},
+                "schema": null,
+                "fileName": null,
+                "globalTableConfigOptions": null
+            },
+            "modelingTransformations": [],
+            "schema": {
+                "tables": [
+                    {
+                        "oid": "22d87e50-b738-45c4-960d-abc80fc37596",
+                        "id": "New Custom Table",
+                        "name": "DateCurrent",
+                        "role": null,
+                        "isRoleBySystem": null,
+                        "type": "custom",
+                        "schemaName": null,
+                        "expression": {
+                            "oid": "15eec2d6-5f5a-4ecb-9164-004dfe34c273",
+                            "expression": "Select\n    AddDays(CurrentDate(), DayDiff(Date, max_date)) as DateCurrent\n    , Date\nFrom [Commerce]\nCROSS JOIN (\n    Select \n        Max(Date) as max_date \n    From [Commerce]\n) tmp",
+                            "isDatabaseDialect": false
+                        },
+                        "columns": [
+                            {
+                                "oid": "2c41e7a0-3145-4b2b-bb41-fa29ff4d2219",
+                                "id": "ebc63e52-dc25-4ec0-8bdd-b78a0fa37355",
+                                "name": "DateCurrent",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 19,
+                                "size": 0,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": true,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "50697c1c-153d-4ad5-b24b-3904d5dd78ed",
+                                "id": "523ddf26-b646-4e42-bc21-4a7f438455bb",
+                                "name": "Date",
+                                "role": null,
+                                "isRoleBySystem": null,
+                                "type": 19,
+                                "size": 0,
+                                "precision": 0,
+                                "scale": 0,
+                                "hidden": true,
+                                "indexed": true,
+                                "isUpsertBy": false,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": true,
+                        "vTag": "f9915e2e-1917-43c4-9526-ff6448e2a2e2",
+                        "isMaterialized": null
+                    }
+                ]
+            },
+            "liveQuerySettings": null
+        }
+    ],
+    "perspectives": [
+        {
+            "_id": "6509a3912931f4002db0dcae",
+            "oid": "fdb9b49d-51d6-4a78-8495-517d4c43fe57",
+            "datamodelOid": "fdb9b49d-51d6-4a78-8495-517d4c43fe57",
+            "description": "",
+            "tables": [],
+            "parentOid": null,
+            "name": "Default",
+            "isDefault": true
+        }
+    ],
+    "dependencies": {}
+}
